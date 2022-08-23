@@ -1,0 +1,81 @@
+import java.util.Scanner;
+
+public class Quiz {
+
+    private static java.util.Scanner Scanner;
+    static java.util.Scanner UI = new Scanner(System.in);
+
+    public static void main(String[] args) throws InterruptedException {
+        Scanner entrada = new Scanner(System.in);
+        int total = 0;
+        System.out.println("--------------------------------");
+        System.out.println("Ola, qual seu nome?");
+        String Name = UI.nextLine();
+        System.out.format("Seja bem vindo, %s!", Name);
+        System.out.println("\nResponda ao quiz abaixo e divirta-se!");
+        Thread.sleep(1000);
+        System.out.println("Primeira pergunta:");
+        System.out.println("Quem foi a primeira pessoa a viajar no Espaço?");
+        System.out.println("1) Yuri Gagarin" +
+                "\n2) Neil Armstrong" +
+                "\n3) Marcos Pontes" +
+                "\n4) Buzz Aldrin");
+        int escolha1 = entrada.nextInt();
+        if (escolha1 == 1) {
+            total = total + 1;
+            System.out.println("Acertou!");
+            System.out.println("O russo Yuri Gagarin (1934-1968) foi a primeira pessoa a " +
+                    "viajar para o espaço, o que aconteceu em 12 de abril de 1961.");
+        } else {
+            System.out.println("Errou!");
+            System.out.println("O russo Yuri Gagarin (1934-1968) foi a primeira pessoa a " +
+                    "viajar para o espaço, o que aconteceu em 12 de abril de 1961.");
+        }
+        Thread.sleep(2000);
+        System.out.println("Continuando:");
+        Thread.sleep(1000);
+        System.out.println("Que país tem o formato de uma bota?");
+        System.out.println("1) Brasil" +
+                "\n2) Portugal" +
+                "\n3) Itália" +
+                "\n4) México");
+        int escolha2 = entrada.nextInt();
+        if (escolha2 == 3) {
+            total = total + 1;
+            System.out.println("Acertou!");
+            System.out.println("No mapa da Europa, a Itália se destaca por parecer uma " +
+                    "bota de cano e salto altos.");
+        } else {
+            System.out.println("Errou!");
+            System.out.println("No mapa da Europa, a Itália se destaca por parecer uma " +
+                    "bota de cano e salto altos.");
+        }
+        Thread.sleep(2000);
+        System.out.println("Chegamos a pergunta final:");
+        Thread.sleep(1000);
+        System.out.println("Quanto tempo a Terra demora para dar uma volta completa em torno dela mesma?");
+        System.out.println("1) Aproximadamente 24 horas" +
+                "\n2) 365 ou 366 dias" +
+                "\n3) 7 dias" +
+                "\n4) 30 ou 31 dias");
+        int escolha3 = entrada.nextInt();
+        if (escolha3 == 1) {
+            total = total + 1;;
+            System.out.println("Acertou!");
+            System.out.println("A Terra demora aproximadamente 24 horas, mais precisamente 23 horas, " +
+                    "56 minutos e 4 segundos \npara dar uma volta completa em torno do seu próprio eixo. " +
+                    "\nEsse movimento recebe o nome de rotação.");
+        } else {
+            System.out.println("Errou!");
+            System.out.println("A Terra demora aproximadamente 24 horas, mais precisamente 23 horas, " +
+                    "56 minutos e 4 segundos \npara dar uma volta completa em torno do seu próprio eixo. " +
+                    "\nEsse movimento recebe o nome de rotação.");
+        }
+        Thread.sleep(2000);
+        System.out.println("Voce acertou " + total);
+
+
+            System.out.println("--------------------------------");
+
+    }
+}
